@@ -3,6 +3,10 @@ const tableBody = document.getElementById('tableBody')
 const calling = document.getElementById('calling')
 const card = document.getElementById('card')
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const urlString = urlParams.get('str')
+
 const numRows = 5
 const max = 75
 
@@ -10,6 +14,7 @@ let possibleCombinations = []
 let possibleWinners = new Array()
 let word
 let win = false
+let usedUrlString = false
 
 let words = [
   "WIT",
@@ -204,7 +209,12 @@ function init(go = false) {
   calling.innerText = ''
   possibleCombinations = []
   possibleWinners = []
-  word = new Word(words.random())
+  if (!usedUrlString && urlString != null) {
+    word = new Word(urlString.toUpperCase())
+    usedUrlString = true
+  } else {
+    word = new Word(words.random())
+  }
   console.log(word)
   newCard(word.length)
   if(go == true) {
