@@ -49,7 +49,17 @@ let words = [
   "LOVE",
   "KITTEN",
   "SEXY",
-  "FEEL"
+  "FEEL",
+  "RUST",
+  "WELD",
+  "SONG",
+  "STAINED",
+  "PULSE",
+  "CHOPPED",
+  "TEAR",
+  "FUGUE",
+  "SONATA",
+  "SCEPTRE"
 ]
 
 // words = [
