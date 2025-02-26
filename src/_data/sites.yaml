@@ -8,15 +8,15 @@
   text: |
     Website relaunch. Development: treat agency
 
-# - name: Eline Mul (upcoming)
-#   year: 2025
-#   url: ''
-#   tech:
-#     - Tailwind
-#     - Alpine.js
-#     - Kirby CMS
-#   text: |
-#     Portfolio for designer Eline Mul
+- name: Eline Mul (upcoming)
+  year: 2025
+  url: ''
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Portfolio website for designer Eline Mul
 
 # - name: Marlie Mul (upcoming)
 #   year: 2025
