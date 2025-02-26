@@ -1,0 +1,17 @@
+---js
+{
+  title: "{{ site.title }}",
+  currentDate: function() {
+    return (new Date()).toLocaleString("de-AT", {timeZone: "Europe/Vienna"});
+  },
+}
+---
+{% include 'partials/htmlhead.njk' %}
+
+    <main class="mb-12 flex-1">
+      <div class="main-content p-3 sm:p-6">
+        {{ content | safe }}
+      </div>
+    </main>
+
+{% include 'partials/htmlfoot.njk' %}

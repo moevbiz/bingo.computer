@@ -1,0 +1,37 @@
+<footer class="footer">
+
+<footer class="sm:text-center text-sm p-3 sm:px-6 sm:py-5 text-gray-400 flex flex-col sm:flex-row flex-wrap justify-between">
+    <div class="flex flex-wrap gap-x-4">
+        <span>
+            &copy; 2017-25
+        </span>
+        <span class="">
+            Vienna, Austria
+        </span>
+        <span class="">
+            Last Build: {{ currentDate() }} CET
+        </span>
+    </div>
+    <div class="flex flex-wrap gap-x-4 sm:justify-center items-center">
+        <span>
+            <a href="{{ '/imprint' | url }}">Imprint</a>
+        </span>
+        <span>
+            <a href="{{ '/privacy' | url }}">Privacy</a>
+        </span>
+        <span class="grayscale text-sm">
+            <a href="https://bruno.earth">🌐</a>
+        </span>
+    </div>
+</footer>
+
+
+
+{# {%- for item in tech -%}
+<div class="tech">
+    <i data-tech="{{ item.name }}"></i>
+    <span class="techname">{{ item.name }}</span>
+</div>
+{%- endfor -%} #}
+
+</footer>

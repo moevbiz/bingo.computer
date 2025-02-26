@@ -1,0 +1,23 @@
+<header class="p-3 sm:p-6 mb-28">
+    <div class="grid md:grid-cols-4 w-full gap-y-2">
+        <div class="">
+            {% if page.url != '/' %}
+            <a href="/">
+                <h1 class="inline" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</h1>
+            </a>
+            {% endif %}
+        </div>
+        <div class="col-span-2">
+            <div class="text-gray-400">
+                for institutions, brands, artists, and creatives
+                <br> 
+                in the fields of visual arts and contemporary culture
+            </div>
+        </div>
+        <div class="w-full md:text-right">
+            <p>
+                <a href="mailto:{{site.email}}" class="">{{site.email}}</a>
+            </p>
+        </div>
+    </div>
+</header>
