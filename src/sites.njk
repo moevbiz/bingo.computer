@@ -14,7 +14,7 @@ layout: layouts/base
     {%- for item in sites -%}
       {% if item.disabled == true or item.url == '' %}
         <li 
-        class="grid sm:grid-cols-8 gap-y-1 flex-col justify-between relative py-3 border-b border-gray-400"
+        class="flex sm:grid grid-cols-8 gap-y-1 justify-between relative py-3 border-b border-gray-400 -mt-px"
         {% if not item.featured %}
         x-show="showAll"
         {% endif %}
@@ -22,10 +22,10 @@ layout: layouts/base
           <div class="col-span-2">
             <h2 class="text-gray-400">{{ item.name }}</h2>
           </div>
-          <div class="col-span-5">
+          <div class="col-span-5 hidden sm:block">
             <p class="text-gray-400">{{ item.text }}</p>
           </div>
-          <div class="col-span-1 text-right hidden sm:block">
+          <div class="col-span-1 text-right">
             {{ item.year }}
           </div>
         </li>
@@ -44,7 +44,7 @@ layout: layouts/base
                 </div>
                 ">
           <li 
-          class="grid sm:grid-cols-8 gap-y-1 flex-col justify-between relative py-3 border-y border-gray-400 -mt-px"
+          class="flex sm:grid grid-cols-8 gap-y-1 justify-between relative py-3 border-b border-gray-400 -mt-px"
           {% if not item.featured %}
           x-show="showAll"
           {% endif %}
@@ -52,10 +52,10 @@ layout: layouts/base
             <div class="col-span-2 mr-2">
               <h2 class="">{{ item.name }}</h2>
             </div>
-            <div class="col-span-5">
+            <div class="col-span-5 hidden sm:block">
               <p class="text-gray-400">{{ item.text }}</p>
             </div>
-            <div class="col-span-1 text-right hidden sm:block">
+            <div class="col-span-1 text-right">
             {{ item.year }}
           </div>
           </li>
@@ -65,7 +65,7 @@ layout: layouts/base
   </ul>
 </section>
 
-<section class="py-36" id="contact">
+<section class="py-32 md:py-48" id="contact">
   <div class="w-full text-center flex items-center justify-center">
     <a class="fitty" href="mailto:{{ site.email }}">{{site.email}}</a>
   </div>
