@@ -1,3 +1,13 @@
+# - name: 'Alexandra Toth (upcoming)'
+#   year: 2025
+#   url: ''
+#   tech:
+#     - Tailwind
+#     - Alpine.js
+#     - Kirby CMS
+#   text: |
+#     Identity + Website for Alexandra Toth gallery
+
 - name: 'Independent Space Index (upcoming)'
   year: 2025
   url: ''

@@ -13,6 +13,21 @@
     <meta property="og:image" content="{{ site.url + '/assets/images/og.png' | url }}" />
     <meta property="og:description" content="" />
 
+    <style>
+      i[data-tech]{width: 100%; height: 100; position: relative; overflow: hidden;}
+      {%- for item in tech -%}
+      [data-tech="{{ item.name }}"]::after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: {{item.color}};
+      }
+      {%- endfor -%}
+    </style>
+
   </head>
   <body class="min-h-[100svh] flex flex-col selection:bg-black selection:text-white">
 
