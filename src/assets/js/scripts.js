@@ -9,6 +9,11 @@ const frameInfoBtm = document.querySelector('#frame-info-bottom');
 const links = document.querySelectorAll('.main-content a[data-frame-info-btm]');
 const closeBtn = document.querySelector('#close-frame');
 
+document.fonts.onloadingdone = () => {
+  console.log("Font loading complete");
+  fitty('.fitty');
+};
+
 if (document.querySelector('.fitty')) {
     fitty('.fitty');
 }
