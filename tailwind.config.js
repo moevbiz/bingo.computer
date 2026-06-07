@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{njk,md}", "./src/**/*.svg",],
   theme: {
     fontFamily: {
-      'sans': '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"'
+      'sans': 'system-ui, Helvetica, Arial, sans-serif',
     },
     fontSize: {
       sm: ['12px', '15px'],

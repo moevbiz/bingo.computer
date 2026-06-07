@@ -9,4 +9,9 @@ new Swiper('.swiper', {
         delay: 4000,
         disableOnInteraction: false,
     },
+    on: {
+        click: function () {
+            this.slideNext();
+        },
+    },
 });

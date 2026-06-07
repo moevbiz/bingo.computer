@@ -8,6 +8,8 @@ body.frame-visible footer {
     filter: blur(4px);
 }
 
+html { -webkit-text-size-adjust: 100%; }
+
 #frame-container {
     position: fixed;
     top: 0;
