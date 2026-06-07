@@ -1,3 +1,7 @@
+import '../css/main.css';
+import fitty from 'fitty';
+import './swiper.js';
+
 let filters = document.querySelectorAll('.filter');
 let elements = document.querySelectorAll('.el');
 const frameContainer = document.querySelector('#frame-container');
@@ -29,6 +33,7 @@ const shuffleArray = array => {
 
 function chChChChanges() {
     let el = document.querySelector('#description');
+    if (!el) return;
     let options = el.dataset.options.split(',');
     shuffleArray(options);
     el.innerText = options[0] == '' ? options[0] : options[1];
